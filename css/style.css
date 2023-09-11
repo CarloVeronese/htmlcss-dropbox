@@ -72,7 +72,7 @@ li a{
 }
 
 .container-hero{
-    max-width: 1150px;
+    max-width: 1200px;
 }
 
 .col-4{
@@ -105,7 +105,7 @@ li a{
 
 main .button{
     display: inline-block;
-    min-width: 225px;
+    width: 225px;
     line-height: 46px;
     text-align: center;
 }
@@ -123,6 +123,27 @@ main .button{
     cursor: pointer;
 }
 
+.container-main{
+    max-width: 1000px;
+}
+
+.left .card{
+    padding-right: 32px;
+}
+
+.middle .card{
+    padding: 0 16px;
+}
+
+.right .card{
+    padding-left: 32px;
+}
+
+.card-type{
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
 /* DEBUG */
 
 .debug [class^="container"]{
@@ -135,4 +156,8 @@ main .button{
 
 .debug [class^="col"]{
     border: 2px solid yellow;
+}
+
+.debug .menu [class^="col"]{
+    min-height: 100px;
 }
