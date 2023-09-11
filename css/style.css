@@ -5,9 +5,12 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+[class^="container"]{
+    margin: 0 auto; 
+}
+
 .container-page{
     max-width: 1920;
-    margin: 0 auto; 
 }
 
 header{
@@ -25,6 +28,10 @@ a{
 
 .row{
     display: flex;
+    flex-wrap: wrap;
+}
+
+header .row{
     justify-content: space-between;
 }
 
@@ -44,7 +51,7 @@ li a{
     /* display: flex; */
     align-items: center;
     line-height: 70px;
-    padding: 0 15px;
+    padding: 0 13px;
 }
 
 .button{
@@ -53,6 +60,46 @@ li a{
     color: white;
 }
 
+.hero{
+    background-color: #B4D0E7;
+}
+
+.container-hero{
+    max-width: 1200px;
+}
+
+.col-4{
+    flex-basis: calc(100% * 4 / 12);
+}
+
+.col-8{
+    flex-basis: calc(100% * 8 / 12);
+}
+
+.col-12{
+    flex-basis: 100%;
+}
+
+.hero-title{
+    font-size: 65px;
+    font-weight: 800;
+    padding: 10px 60px 10px 0;
+}
+
+/* DEBUG */
+
 .debug [class^="container"]{
-    background-color: cornflowerblue;
+    border: 2px solid red;
+}
+
+.debug .row{
+    border: 2px solid green;
+}
+
+.debug [class^="col"]{
+    border: 2px solid blue;
+}
+
+.debug main [class^="col"]{
+    min-height: 200px;
 }
