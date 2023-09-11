@@ -13,6 +13,10 @@
     max-width: 1920;
 }
 
+img{
+    width: 100%;
+}
+
 header{
     font-size: 13px;
 }
@@ -26,6 +30,11 @@ a{
     color: black;
 }
 
+.button{
+    background-color: #0061FF;
+    color: white;
+}
+
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -33,6 +42,10 @@ a{
 
 header .row{
     justify-content: space-between;
+}
+
+header .button{
+    padding: 5px 10px;
 }
 
 .list-flex{
@@ -54,18 +67,12 @@ li a{
     padding: 0 13px;
 }
 
-.button{
-    background-color: #0061FF;
-    padding: 5px 10px;
-    color: white;
-}
-
 .hero{
     background-color: #B4D0E7;
 }
 
 .container-hero{
-    max-width: 1200px;
+    max-width: 1150px;
 }
 
 .col-4{
@@ -83,7 +90,37 @@ li a{
 .hero-title{
     font-size: 65px;
     font-weight: 800;
-    padding: 10px 60px 10px 0;
+    padding: 50px 60px 30px 0;
+}
+
+.flex-col{
+    flex-direction: column;  
+    gap: 40px; 
+}
+
+.hero-paragraph{
+    font-size: 17px;
+    font-weight: 400;
+}
+
+main .button{
+    display: inline-block;
+    min-width: 225px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.down-arrow{
+    flex-grow: 1;
+    display: flex;
+    padding: 0px;
+}
+
+.down-arrow span{
+    align-self: flex-end;
+    font-size: 50px;
+    padding-bottom: 7px;
+    cursor: pointer;
 }
 
 /* DEBUG */
@@ -97,9 +134,5 @@ li a{
 }
 
 .debug [class^="col"]{
-    border: 2px solid blue;
-}
-
-.debug main [class^="col"]{
-    min-height: 200px;
+    border: 2px solid yellow;
 }
