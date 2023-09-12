@@ -30,9 +30,14 @@ a{
     color: black;
 }
 
+i{
+    padding-right: 5px;
+}
+
 .button{
-    background-color: #0061FF;
+    background-color: var(--blue);
     color: white;
+    width: 100%;
 }
 
 .row{
@@ -45,11 +50,17 @@ header .row{
 }
 
 header .button{
-    padding: 5px 10px;
+    display: inline-block;
+    padding: 0px 10px;
+    line-height: 25px;
 }
 
 .list-flex{
     display: flex;
+}
+
+header .list-flex{
+    align-items: center;
 }
 
 .list-flex li{
@@ -57,13 +68,14 @@ header .button{
 }
 
 .logo{
-    width: 121px;
+    /* width: 121px; */
+    display: block;
 }
 
 li a{
     /* display: flex; */
     align-items: center;
-    line-height: 70px;
+    line-height: 35px;
     padding: 0 13px;
 }
 
@@ -79,6 +91,14 @@ li a{
     flex-basis: calc(100% * 4 / 12);
 }
 
+.col-6{
+    flex-basis: calc(100% * 6 / 12);
+}
+
+.col-7{
+    flex-basis: calc(100% * 7 / 12);
+}
+
 .col-8{
     flex-basis: calc(100% * 8 / 12);
 }
@@ -91,10 +111,16 @@ li a{
     font-size: 65px;
     font-weight: 800;
     padding: 50px 60px 30px 0;
+    line-height: 1.2;
 }
 
 .flex-col{
-    flex-direction: column;  
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;  
+}
+
+.hero .flex-col{
     gap: 40px; 
 }
 
@@ -105,9 +131,12 @@ li a{
 
 main .button{
     display: inline-block;
-    width: 225px;
-    line-height: 46px;
     text-align: center;
+}
+
+.hero .button{
+    line-height: 40px;
+    width: 225px;
 }
 
 .down-arrow{
@@ -125,6 +154,26 @@ main .button{
 
 .container-main{
     max-width: 1000px;
+    padding-top: 50px;
+}
+
+.plan-title{
+    font-size: 33px;
+    font-weight: 600;
+    padding-bottom: 35px;
+}
+
+.billing{
+    padding-bottom: 25px;
+    font-size: 13px;
+}
+
+.billing input[type="radio"]{
+    vertical-align: middle;
+}
+
+.billing__monthly{
+    padding-right: 40px;
 }
 
 .left .card{
@@ -140,8 +189,149 @@ main .button{
 }
 
 .card-type{
-    border-bottom: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.3);
     text-align: center;
+    padding: 7px 0;
+}
+
+.card-content{
+    padding: 0px 47px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: 0px;
+    height: 100%;
+}
+
+.card-title{
+    padding: 20px 0 10px;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.card{
+    font-size: 12px;
+    height: 100%;
+}
+
+.cost{
+    padding-bottom: 30px;
+}
+
+.price{
+    font-weight: 800;
+    padding: 10px 0;
+}
+
+.features{
+    padding-bottom: 30px;
+}
+
+.features .row{
+    padding: 10px 0;
+}
+
+.nowrap{
+    flex-wrap: nowrap;
+}
+
+.buy-now{
+    padding: 15px 0px 0px;
+}
+
+.buy-now a{
+    text-decoration: underline;
+    color: #1010EF;
+}
+
+.check{
+    color: blue;
+    }
+
+.separate{
+    width: 15%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.highlights{
+    font-weight: 800;
+    padding-bottom: 20px;
+}
+
+.highlights_list{
+    gap: 15px;
+}
+
+.menu{
+    justify-content: stretch;
+}
+
+.menu .button{
+    line-height: 40px;
+}
+
+.menu .col-12{
+    padding-top: 50px;
+}
+
+.team-plan{
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.team-plan .cost{
+    padding-bottom: 30px;
+}
+
+.team-plan .button{
+    margin-top: 20px;
+    padding: 0 34px;
+}
+
+.partner{
+    margin-top: 50px;
+}
+
+.partner-description{
+    padding: 50px 200px 50px 30px;
+}
+
+.partner-title{
+    font-size: 17px;
+}
+
+.partner-paragraph{
+    padding: 20px 0;
+}
+
+.partner-paragraph, .partner-button{
+    font-size: 12px;
+}
+
+.partner-button{
+    margin-top: 20px;
+    background-color: var(--light);
+    color: black;
+    border: 1px solid black;
+    padding: 0 10px;
+    width: fit-content;
+    line-height: 30px;
+}
+
+/* PALETTE */
+
+:root {
+    --blue: #0061ff;
+    --light-blue: #B4D0E7;
+    --dark-blue: #0d2481;
+    --dark: black;
+    --bordeaux: #61082b;
+    --green:#a2d396;
+    /* --yellow:;
+    --red:;
+    --dark-red:;
+    --light-gray:;*/
+    --light: white;
 }
 
 /* DEBUG */
@@ -158,6 +348,14 @@ main .button{
     border: 2px solid yellow;
 }
 
+.debug .flex-col > *{
+    border: 2px solid purple;
+}
+/* 
 .debug .menu [class^="col"]{
     min-height: 100px;
+} */
+
+.debug .flex-col{
+    border: 2px solid orange;
 }
