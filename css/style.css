@@ -157,9 +157,9 @@ main .button{
     padding: 60px 0;
 }
 
-.plan-title{
+.section-title{
     font-size: 33px;
-    font-weight: 600;
+    font-weight: 800;
     padding-bottom: 35px;
 }
 
@@ -221,11 +221,11 @@ main .button{
     flex-wrap: nowrap;
 }
 
-.buy-now{
+.link-phrase{
     padding: 15px 0px 0px;
 }
 
-.buy-now a{
+.link-phrase a{
     text-decoration: underline;
     color: #1010EF;
 }
@@ -316,6 +316,10 @@ main .button{
 [class^="col"]{
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.clients .link-phrase{
+    font-size: 14px;
 }
 
 /* PALETTE */
