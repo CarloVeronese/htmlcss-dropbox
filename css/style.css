@@ -87,6 +87,10 @@ li a{
     max-width: 1200px;
 }
 
+.col-3{
+    flex-basis: calc(100% * 3 / 12);
+}
+
 .col-4{
     flex-basis: calc(100% * 4 / 12);
 }
@@ -235,7 +239,7 @@ main .button{
     }
 
 .separate{
-    width: 15%;
+    width: 20%;
     border-bottom: 2px solid rgba(0, 0, 0, 0.2);
     margin-bottom: 40px;
     margin-top: 30px;
@@ -296,6 +300,7 @@ main .button{
     padding: 20px 0;
     line-height: 20px;
     font-size: 12px;
+    font-weight: 400;
 }
 
 .partner img{
@@ -322,6 +327,76 @@ main .button{
     font-size: 14px;
 }
 
+.container-full{
+    min-width: 100%;
+}
+
+
+.container-full [class^="col"]{
+    padding: 0;
+}
+
+.logo-container{
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.designit-logo-white{
+    background-color: var(--light-green);
+}
+
+.arizona{
+    background-color: var(--bordeaux);
+}
+
+.florida{
+    background-color: var(--water-blue);
+}
+
+.topps{
+    background-color: var(--red);
+}
+
+.designit-content{
+    padding: 40px;
+    padding-bottom: 0;
+}
+
+.designit-content .separate{
+    margin: 40px 0;
+}
+
+.designit{
+    background-color: var(--light-gray);
+}
+
+.bicycle{
+    background-color: var(--dark-red);
+}
+
+.hearst{
+    background-color: var(--light-blue);
+}
+
+.lonely_planet{
+    background-color: var(--dark-blue);
+}
+
+.clear_channel{
+    background-color: var(--yellow);
+}
+
+.client-logo{
+    width: 50%;
+    fill: white;
+}
+
+.designit-content .paragraph-content{
+    padding-top: 0;
+}
+
 /* PALETTE */
 
 :root {
@@ -331,10 +406,12 @@ main .button{
     --dark: black;
     --bordeaux: #61082b;
     --green:#a2d396;
-    /* --yellow:;
-    --red:;
-    --dark-red:;
-    --light-gray:;*/
+    --light-green: #A2D39B;
+    --water-blue: #0093CE;
+    --red: #FF1C1C;
+    --dark-red: #D5001F;
+    --yellow: #FFD830;
+    --light-gray: #F5F5F5;
     --light: white;
 }
 
@@ -356,6 +433,7 @@ main .button{
 .debug .flex-col > *{
     border: 2px solid purple;
 }
+
 /* 
 .debug .menu [class^="col"]{
     min-height: 100px;
@@ -363,4 +441,9 @@ main .button{
 
 .debug .flex-col{
     border: 2px solid orange;
+}
+
+.debug .col-3{
+    border: 2px solid black;
+    min-height: 100px;
 }
