@@ -38,6 +38,7 @@ i{
     background-color: var(--blue);
     color: white;
     width: 100%;
+    white-space: nowrap;
 }
 
 .row{
@@ -159,9 +160,21 @@ main .button{
     cursor: pointer;
 }
 
+.hero-image-container{
+    position: relative;
+}
+
+.hero-image{
+    position: absolute;
+}
+
 .container-main{
     max-width: 1000px;
     padding: 60px 0;
+}
+
+.plans{
+    padding-top: 100px;
 }
 
 .section-title{
@@ -344,6 +357,7 @@ main .button{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .clients .col-6 img{
@@ -352,19 +366,34 @@ main .button{
 
 .designit-logo-white{
     background-color: var(--light-green);
-    border: 15px solid var(--lighter-green) ;
+}
+
+.designit-logo-white:hover{
+    box-shadow: inset 0px 0px 0px 15px var(--lighter-green);
 }
 
 .arizona{
     background-color: var(--bordeaux);
 }
 
+.arizona:hover{
+    box-shadow: inset 0px 0px 0px 15px var(--shadow-bordeaux);
+}
+
 .florida{
     background-color: var(--water-blue);
 }
 
+.florida:hover{
+    box-shadow: inset 0px 0px 0px 15px var(--shadow-water-blue);
+}
+
 .topps{
     background-color: var(--red);
+}
+
+.topps:hover{
+    box-shadow: inset 0px 0px 0px 15px var(--shadow-red);
 }
 
 .designit-content{
@@ -384,16 +413,32 @@ main .button{
     background-color: var(--dark-red);
 }
 
+.bicycle:hover{
+    box-shadow: inset 0px 0px 0px 15px var(--shadow-dark-red);
+}
+
 .hearst{
     background-color: var(--light-blue);
+}
+
+.hearst:hover{
+    box-shadow: inset 0px 0px 0px 15px var(--shadow-light-blue);
 }
 
 .lonely_planet{
     background-color: var(--dark-blue);
 }
 
+.lonely_planet:hover{
+    box-shadow: inset 0px 0px 0px 15px var(--shadow-dark-blue);
+}
+
 .clear_channel{
     background-color: var(--yellow);
+}
+
+.clear_channel:hover{
+    box-shadow: inset 0px 0px 0px 15px var(--shadow-yellow);
 }
 
 .client-logo{
@@ -504,15 +549,22 @@ footer .separate{
 :root {
     --blue: #0061ff;
     --light-blue: #B4D0E7;
+    --shadow-light-blue: #98b0c5;
     --dark-blue: #0d2481;
+    --shadow-dark-blue: #223ca5;
     --dark: black;
     --bordeaux: #61082b;
+    --shadow-bordeaux: #891241;
     --green:#a2d396;
     --light-green: #A2D39B;
     --water-blue: #0093CE;
+    --shadow-water-blue: #06a7e8;
     --red: #FF1C1C;
+    --shadow-red: #e36d6d;
     --dark-red: #D5001F;
+    --shadow-dark-red: #d2586a;
     --yellow: #FFD830;
+    --shadow-yellow: #ddbb27;
     --light-gray: #F5F5F5;
     --light: white;
     --brown-red: #642340;
