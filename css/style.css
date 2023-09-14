@@ -165,8 +165,9 @@ main .button{
 } */
 
 .hero-image{
-    position: relative;
-    bottom: -80px;
+    /* position: relative; */
+    /* bottom: -80px; */
+    margin-bottom: -450px;
 }
 
 .container-main{
@@ -509,6 +510,11 @@ footer .paragraph-title{
 
 footer .flex-col{
     gap: 5px;
+}
+
+footer .row > .col{
+    flex-grow: 1;
+    flex-basis: 0;
 }
 
 footer a{
