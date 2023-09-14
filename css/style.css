@@ -160,12 +160,13 @@ main .button{
     cursor: pointer;
 }
 
-.hero-image-container{
+/* .hero-image-container{
     position: relative;
-}
+} */
 
 .hero-image{
-    position: absolute;
+    position: relative;
+    bottom: -80px;
 }
 
 .container-main{
